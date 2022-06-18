@@ -7,6 +7,7 @@
 
 body {
   background-color: white;
+  font-family: var(--font-principal);
 }
 
 .navbar .navbar-brand {
@@ -14,21 +15,22 @@ body {
   /* border: 1px solid blue; */
   font-weight: 600;
   color: white;
+  transition:all 0.5s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link {
   font-family: var(--font-principal);
   color: white;
+  transition:all 0.5s ease-in-out;
 }
 
+.navbar .navbar-brand:hover{
+  color: black;
+
+}
 .navbar-nav .nav-item .nav-link:hover {
   color: black;
-}
-
-.banner {
-  background-image: url("../img/bannerSite/FABLACK.png");
-  height: 400px;
-  width: 100%;
+ 
 }
 
 .titulo-bem-vindo {
@@ -38,6 +40,7 @@ body {
   align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
+  font-family: var(--font-principal);
 }
 
 .sobre-mim {
@@ -69,7 +72,7 @@ body {
 }
 
 .foto-sobre-principal {
-  width: 50%;
+  width: 40%;
   padding: 40px;
 }
 
@@ -82,6 +85,12 @@ body {
 /* RESPONSIVIDADE */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+
+  .navbar-nav .nav-item .nav-link {
+    font-family: var(--font-principal);
+    color: white;
+    text-align: center;
+  }
 
   .sobre-mim {
     width: 100% !important;
@@ -220,9 +229,8 @@ body {
   }
 
   .texto-sobre-principal {
-    width: 70%;
-    height: 30%;
-    padding: 100px;
+    width: 50%;
+    padding: 50px;
     justify-content: center;
     font-weight: 300;
     color: white;
@@ -241,7 +249,7 @@ body {
 
   .foto-sobre-principal {
     padding: 50px;
-    width: 60%;
+    width: 50%;
   }
 
   .imagem-sobre-principal {
