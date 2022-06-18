@@ -40,13 +40,46 @@ body {
   padding-bottom: 30px;
 }
 
+.sobre-mim {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #8e173c;
+  font-family: var(--font-principal);
 
+}
 
+.subtitulo {
+  font-family: var(--font-principal);
+  font-size: 2.5rem;
+  color: white;
+  font-weight: 600;
+  padding-bottom: 20px;
+  text-align: center;
+}
 
+.texto-sobre-principal {
+  width: 50%;
+  justify-content: center;
+  font-weight: 300;
+  color: white;
+  font-family: var(--font-principal);
+  padding: 10%;
+  text-align: justify;
+}
 
+.foto-sobre-principal {
+  width: 50%;
+  padding: 40px;
+}
+
+.imagem-sobre-principal {
+
+  display: block;
+  margin: 0 auto;
+}
 
 /* RESPONSIVIDADE */
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -98,31 +131,29 @@ body {
     font-family: var(--font-principal);
   }
 
+  .subtitulo {
+    font-family: var(--font-principal);
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+  }
+
   .texto-sobre-principal {
-    padding: 40px;
-    justify-content: center;
+    width: 100% !important;
     font-weight: 300;
     color: white;
     font-family: var(--font-principal);
+    font-size: 16px;
     text-align: justify;
-  }
-
-  .subtitulo {
-    font-family: var(--font-principal);
-    font-size: 1.1rem;
-    color: white;
-    font-weight: 600;
-    padding-bottom: 20px;
-    text-align: center;
   }
 
   .foto-sobre-principal {
     width: 100%;
-    padding: 10px;
   }
 
   .imagem-sobre-principal {
-    width: 100%;
+    width: 80% !important;
     display: block;
     margin: 0 auto;
   }
@@ -139,7 +170,7 @@ body {
     flex-direction: row;
     background-color: #8e173c;
     font-family: var(--font-principal);
-  
+
   }
 
   .texto-sobre-principal {
@@ -185,7 +216,7 @@ body {
     flex-direction: row;
     background-color: #8e173c;
     font-family: var(--font-principal);
-  
+
   }
 
   .texto-sobre-principal {
@@ -218,53 +249,5 @@ body {
     display: block;
     margin: 0 auto;
   }
-
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-  .sobre-mim {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    background-color: #8e173c;
-    font-family: var(--font-principal);
-  
-  }
-  
-  
-  .subtitulo {
-    font-family: var(--font-principal);
-    font-size: 2.5rem;
-    color: white;
-    font-weight: 600;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-
-  .texto-sobre-principal {
-    width: 50%;
-    height: 100%;
-    justify-content: center;
-    font-weight: 300;
-    color: white;
-    font-family: var(--font-principal);
-    padding: 10%;
-    text-align: justify;
-  }
-
-  .foto-sobre-principal {
-    width: 50%;
-    padding: 40px;
-  }
-
-  .imagem-sobre-principal {
-
-    display: block;
-    margin: 0 auto;
-  }
-
 
 }
